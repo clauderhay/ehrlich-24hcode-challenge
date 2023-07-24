@@ -31,4 +31,5 @@ Note: These commands are defined in `package.json` and can be changed according 
 
 ## OPEN API (SWAGGER)
 
-Once the server starts running, you can go to
+Swagger has been setup for this challenge.
+Once the server starts running, you can go to `http://localhost:3000/api` to see the available API's.
