@@ -33,3 +33,9 @@ Note: These commands are defined in `package.json` and can be changed according 
 
 Swagger has been setup for this challenge.
 Once the server starts running, you can go to `http://localhost:3000/api` to see the available API's.
+
+## .env File
+
+Make sure you set up your own Environment Variabless with the correct values in your configuration especially in setting up your database.
+Generate your own `Sendgrid API KEY`, `Cloudinary API KEY`, and `Pexels API KEY`.
+I have attached a skeleton `.env.example` file for a headstart.
