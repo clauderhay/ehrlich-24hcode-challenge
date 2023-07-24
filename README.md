@@ -10,6 +10,7 @@ I present to you my mini-project that I worked so hard for.
 4. Create database: `CREATE DATABASE code-challenge;`
 5. Create user: `CREATE USER 'user01'@'%' IDENTIFIED WITH mysql_native_password BY 'ehrlichpass';`
 6. Grant the new user access to your database: `GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, INDEX, DROP, ALTER, REFERENCES, CREATE TEMPORARY TABLES, LOCK TABLES ON code-challenge.* TO 'user01'@'%';` (this is to avoid using the root user of the database)
+7. Never forget, `$ npm install`
 
 ### Initialize your local database
 
@@ -27,3 +28,8 @@ Note: For future database changes, run the same command.
 3. `$ npm run typeorm:revert` : reverts last database changes
 
 Note: These commands are defined in `package.json` and can be changed according to your code
+
+## OPEN API (SWAGGER)
+
+Swagger has been setup for this challenge.
+Once the server starts running, you can go to `http://localhost:3000/api` to see the available API's.
