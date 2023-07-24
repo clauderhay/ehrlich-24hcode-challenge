@@ -7,6 +7,7 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 // import config from './config';
 import { User } from './database/entities/UserEntity';
 import { Image } from './database/entities/ImageEntity';
+import { PasswordResetToken } from './database/entities/PasswordResetTokenEntity';
 
 // const { DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, DB_DATABASE } = config;
 
@@ -17,10 +18,10 @@ export const dataSourceOptions: DataSourceOptions = {
   username: 'root',
   password: 'claude',
   database: 'code-challenge',
-  synchronize: true,
+  synchronize: false,
   logging: false,
-  entities: [User, Image],
-  migrations: ['src/database/migrations/*.ts'],
+  entities: [User, Image, PasswordResetToken],
+  migrations: ['dist/database/migrations/*.js'],
 };
 
 const dataSource = new DataSource(dataSourceOptions);

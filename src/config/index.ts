@@ -1,7 +1,7 @@
 
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 
-dotenv.config({ path: '../.env' });
+dotenv.config({ path: '../../.env' });
 
 export default {
     // DATABASE
@@ -25,4 +25,7 @@ export default {
 
     // PEXELS
     PEXELS_API_KEY: process.env.PEXELS_API_KEY,
+
+    //APP URL
+    APP_URL: process.env.APP_URL,
 };
